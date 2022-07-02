@@ -1,5 +1,10 @@
-const navItem = document.querySelector('#categories');
-console.log(navItem);
+const numbCategories = document.querySelectorAll('.item');
 
-const navItemEl = document.querySelectorAll('.item');
-console.log(navItemEl);
+console.log(`Number of categories ${numbCategories.length}`);
+
+numbCategories.forEach((element) => {
+    return console.log(`Category: ${element.querySelector("h2").textContent}
+    Element: ${element.querySelectorAll("li").length}`);
+}
+
+)
